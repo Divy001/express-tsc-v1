@@ -26,4 +26,4 @@ jobs:
           REMOTE_HOST: 3.110.188.180
           REMOTE_USER: ec2-user
           TARGET: "~/backend/"
-          EXCLUDE: "/dist/, /node_modules/"
+          EXCLUDE: "/dist/"
