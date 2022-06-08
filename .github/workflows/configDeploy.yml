@@ -27,6 +27,7 @@ jobs:
           REMOTE_USER: ec2-user
           TARGET: "~/backend/"
           EXCLUDE: "/dist/, /node_modules/"
+          RUN: cd ~/backend && npm install
     # - name: Run on Server
       # run: |
       #       ssh -i ${{ secrets.SERVER_SSH_KEY }} ec2-user@ec2-3-110-188-180.ap-south-1.compute.amazonaws.com
