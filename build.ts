@@ -15,10 +15,14 @@ import childProcess from 'child_process';
         // Copy front-end files
         await copy('./src/public', './dist/public');
         await copy('./src/views', './dist/views');
+        // Copy package files
+        await copy('./package.json', './dist/package.json');
+        await copy('./node_modules', './dist/node_modules');
         // Copy production env file
         await copy('./src/pre-start/env/production.env', './dist/pre-start/env/production.env');
         // Copy back-end files
-        await exec('tsc --build tsconfig.prod.json', './')
+        await exec('tsc --build tsconfig.prod.json', './');
+        await copy('./prod.package.json', './dist/package.json');
     } catch (err) {
         logger.err(err);
     }

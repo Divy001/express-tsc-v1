@@ -27,3 +27,16 @@ jobs:
           REMOTE_USER: ec2-user
           TARGET: "~/backend/"
           EXCLUDE: "/dist/, /node_modules/"
+    # - name: Run on Server
+      # run: |
+      #       ssh -i ${{ secrets.SERVER_SSH_KEY }} ec2-user@ec2-3-110-188-180.ap-south-1.compute.amazonaws.com
+
+      # uses: easingthemes/ssh-deploy@main
+      # env:
+      #     SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+      #     ARGS: "-rltgoDzvO --delete"
+      #     SOURCE: "dist/"
+      #     REMOTE_HOST: 3.110.188.180
+      #     REMOTE_USER: ec2-user
+      #     TARGET: "~/backend/"
+      #     EXCLUDE: "/dist/, /node_modules/"
