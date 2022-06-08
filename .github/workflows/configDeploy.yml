@@ -7,7 +7,7 @@ jobs:
   
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     env: 
       AWS_HOST: 3.110.188.180
 
