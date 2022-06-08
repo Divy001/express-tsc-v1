@@ -12,9 +12,9 @@ jobs:
       AWS_HOST: 3.110.188.180
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - name: Install Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: '16.x'
     - name: Install npm dependencies
@@ -34,7 +34,7 @@ jobs:
           RUN: cd ~/backend && npm install
     - name: Run on Server
       run: |
-            ssh -i ${{ secrets.SERVER_SSH_KEY }} ec2-user@{{AWS_HOST}}
+            ssh -i ${{ secrets.SERVER_SSH_KEY }} ec2-user@ec2-3-110-188-180.ap-south-1.compute.amazonaws.com
             cd ~/backend 
             npm install
 
