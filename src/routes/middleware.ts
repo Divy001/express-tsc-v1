@@ -26,6 +26,7 @@ export async function authMw(req: Request, res: Response, next: NextFunction) {
             throw Error(jwtNotPresentErr);
         }
         // Make sure user role is an admin
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         const clientData = await jwtUtil.decode(jwt);
         if (!!clientData) {
             res.locals.sessionUser = clientData;
@@ -38,4 +39,4 @@ export async function authMw(req: Request, res: Response, next: NextFunction) {
             error: err.message,
         });
     }
-};
+}

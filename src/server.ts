@@ -1,4 +1,4 @@
-import cookieParser from 'cookie-parser';
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import morgan from 'morgan';
 import path from 'path';
 import http from 'http';
@@ -24,7 +24,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
-app.use(cookieParser(cookieProps.secret));
+// app.use(cookieParser(cookieProps.secret));
 
 // Show routes called in console during development
 if (process.env.NODE_ENV === 'development') {

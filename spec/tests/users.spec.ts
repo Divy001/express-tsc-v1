@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import supertest from 'supertest';
 import StatusCodes from 'http-status-codes';
 import { SuperTest, Test, Response } from 'supertest';

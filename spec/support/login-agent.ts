@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import bcrypt from 'bcrypt';
 import { SuperTest, Test } from 'supertest';
 
@@ -37,7 +38,7 @@ function login(beforeAgent: SuperTest<Test>, done: (arg: string) => void) {
             }
             done(res.headers['set-cookie']);
         });
-};
+}
 
 
 // Export default

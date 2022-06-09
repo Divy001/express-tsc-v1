@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 import { IUser } from '@models/user-model';
 import { getRandomInt } from '@shared/functions';
 import orm from './mock-orm';

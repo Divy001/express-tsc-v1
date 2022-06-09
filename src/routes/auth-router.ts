@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 
 import authService from '@services/auth-service';
 import { ParamMissingError } from '@shared/errors';

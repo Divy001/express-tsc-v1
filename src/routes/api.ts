@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import { Router } from 'express';
 import { authMw } from './middleware';
 import authRouter from './auth-router';

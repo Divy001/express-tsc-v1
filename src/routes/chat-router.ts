@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import SocketIO from 'socket.io';
 import StatusCodes from 'http-status-codes';
 import { Router, Request, Response } from 'express';
